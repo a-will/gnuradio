@@ -580,6 +580,10 @@ namespace gr {
           const size_t mboard = 0
       ) = 0;
 
+      virtual void set_double_property(
+          const std::string &prop,
+          const double value
+      ) = 0;
     };
 
   } /* namespace uhd */

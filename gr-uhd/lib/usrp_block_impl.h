@@ -90,6 +90,7 @@ namespace gr {
           const boost::uint32_t mask,
           const size_t mboard
       );
+      void set_double_property(const std::string &prop, const double value);
 
       // RPC
       void setup_rpc();

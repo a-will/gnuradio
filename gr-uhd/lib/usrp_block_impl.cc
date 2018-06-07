@@ -485,6 +485,14 @@ usrp_block_impl::set_gpio_attr(
 #endif
 }
 
+void
+usrp_block_impl::set_double_property(
+    const std::string &prop,
+    const double value
+) {
+    _dev->get_device()->get_tree()->access<double>(prop).set(value);
+};
+
 ::uhd::usrp::multi_usrp::sptr
 usrp_block_impl::get_device(void)
 {
